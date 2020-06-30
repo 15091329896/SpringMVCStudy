@@ -2,7 +2,7 @@ package controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 /**
-* “@Controller”表示 IndexController 的实例是一个控制器
+* “@Controller”表示 IndexController630 的实例是一个控制器
 *
 * @Controller相当于@Controller(@Controller) 或@Controller(value="@Controller")
 */
