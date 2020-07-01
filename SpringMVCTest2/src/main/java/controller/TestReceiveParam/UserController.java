@@ -45,7 +45,6 @@ public class UserController {
 		} else {
 			logger.info("失败");
 			// 在register.jsp页面上可以使用EL表达式取出model的uname值
-			model.addAttribute("uname", user.getUname());
 			return "register"; // 返回 register.jsp
 		}
 	}
