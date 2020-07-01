@@ -37,7 +37,7 @@ public class UserController {
 	 * 处理注册 使用UserForm对象(实体Bean) user接收注册页面提交的请求参数}
 	 */
 	@RequestMapping("/register")
-	public String register(UserForm user, Model model) {
+	public String register(UserForm user) {
 		logger.info(" user = " + user.toString());
 		if ("zhangsan".equals(user.getUname()) && "123456".equals(user.getUpass())) {
 			logger.info("成功");
