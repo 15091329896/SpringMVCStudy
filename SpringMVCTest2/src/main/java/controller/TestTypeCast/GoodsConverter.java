@@ -4,8 +4,10 @@ import org.springframework.core.convert.converter.Converter;
 
 import bean.GoodsModel;
 
+
 public class GoodsConverter implements Converter<String, GoodsModel> {
     public GoodsModel convert(String source) {
+    	
         // 创建一个Goods实例
         GoodsModel goods = new GoodsModel();
         // 以“，”分隔
