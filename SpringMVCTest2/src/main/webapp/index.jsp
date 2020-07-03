@@ -8,8 +8,24 @@
 </head>
 <body>
 	没注册的用户，请
-	<a href="${pageContext.request.contextPath }/index/register"> 注册</a>！
+	<a href="${pageContext.request.contextPath }/user703/register"> 注册</a>！
 	<br /> 已注册的用户，去
-	<a href="${pageContext.request.contextPath }/index630/login"> 登录</a>！
+	<a href="${pageContext.request.contextPath }/user703/login"> 登录</a>！
+	<br />
+	<br />
+	<%-- <a href="${pageContext.request.contextPath }/index702/login7022"> 测试重定向 </a><br />
+	<a href="${pageContext.request.contextPath }/index702/isLogin7023"> 测试转发</a> --%>
+
+	<a href="${pageContext.request.contextPath }/admin703/add"> 测试新增 </a>
+	<br />
+	<a href="${pageContext.request.contextPath }/admin703/delete"> 测试删除
+	</a>
+
+	<form action="${pageContext.request.contextPath}/my/converter"
+		method="post">
+		请输入商品信息（格式为apple, 10.58,200）: <input type="text" name="goods" /><br>
+		<input type="submit" value="提交" />
+	</form>
+
 </body>
 </html>

@@ -7,7 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="${pageContext.request.contextPath }/user/login"
+	登录页面
+	<br/>
+	<br/>
+	<form action="${pageContext.request.contextPath }/user703/login"
 		method="post">
 		<table>
 			<tr>

@@ -6,9 +6,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * 转发和重定向
- * @author fengll
- *
+ * 
+* @ClassName: IndexController702 
+* @Description: 测试转发和重定向 
+* @author dyk 
+* @date Jul 3, 2020 1:52:12 PM 
+*
  */
 @Controller
 @RequestMapping("/index702")
@@ -22,18 +25,20 @@ public class IndexController702 {
     }
     
     
-    @RequestMapping("/login")
+    @RequestMapping("/login7022")
     public String login() {
-        //转发到一个请求方法（同一个控制器类可以省略/index/）
-        return "forward:/index/isLogin";
+    	System.out.println("login7022  实施重定向 ");
+        return "forward:/index702/isLogin7023";
     }
-    @RequestMapping("/isLogin")
+    @RequestMapping("/isLogin7023")
     public String isLogin() {
-        //重定向到一个请求方法
-        return "redirect:/index/isRegister";
+    	System.out.println("重定向的方法  isLogin7023 被调用");
+    	System.out.println("login7023  实施转发 ");
+        return "redirect:/index702/isRegister7024";
     }
-    @RequestMapping("/isRegister")
+    @RequestMapping("/isRegister7024")
     public String isRegister() {
+    	System.out.println("isLogin7023 转发成功 ");
         //转发到一个视图
         return "register";
     }
