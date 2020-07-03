@@ -8,7 +8,7 @@
 </head>
 <body>
 	没注册的用户，请
-	<a href="${pageContext.request.contextPath }/index630/register"> 注册</a>！
+	<a href="${pageContext.request.contextPath }/index/register"> 注册</a>！
 	<br /> 已注册的用户，去
 	<a href="${pageContext.request.contextPath }/index630/login"> 登录</a>！
 </body>

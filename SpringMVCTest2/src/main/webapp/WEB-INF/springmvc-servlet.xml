@@ -24,7 +24,7 @@
 	<mvc:resources location="/html/" mapping="/html/**" />
 	<!-- 允许css目录下的所有文件可见 -->
 	<mvc:resources location="/images/" mapping="/images/**" />
-
+	<mvc:resources location="/jsp/" mapping="/jsp/**" />
 
 	<!-- 配置视图解析器 -->
 	<bean

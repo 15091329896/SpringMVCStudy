@@ -1,4 +1,4 @@
-package controller.TestReceiveParam;
+package controller.TestForwarding;
 
 import javax.servlet.http.HttpSession;
 
@@ -17,10 +17,10 @@ import bean.UserForm;
  */
 
 @Controller
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/user702")
+public class UserController702 {
 	// 得到一个用来记录日志的对象，这样在打印信息的时候能够标记打印的是哪个类的信息
-	private static final Log logger = LogFactory.getLog(UserController.class);
+	private static final Log logger = LogFactory.getLog(UserController702.class);
 
 	/**
 	 * 处理登录 使用UserForm对象(实体Bean) user接收注册页面提交的请求参数

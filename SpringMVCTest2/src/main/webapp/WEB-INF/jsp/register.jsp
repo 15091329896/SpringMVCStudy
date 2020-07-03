@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="${pageContext.request.contextPath }/user/register"
+	<form action="${pageContext.request.contextPath }/index630/register7024"
 		method="post">
 		<table>
 			<tr>
