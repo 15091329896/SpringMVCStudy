@@ -1,12 +1,23 @@
 package bean;
 
+import java.util.Date;
+
 public class GoodsModel {
 	private String goodsname;
 	private double goodsprice;
 	private int goodsnumber;
+	private Date goodsdate;
 
 	public GoodsModel() {
 		super();
+	}
+
+	public Date getGoodsdate() {
+		return goodsdate;
+	}
+
+	public void setGoodsdate(Date goodsdate) {
+		this.goodsdate = goodsdate;
 	}
 
 	public String getGoodsname() {

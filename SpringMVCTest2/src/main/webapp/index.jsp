@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>  
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -21,7 +20,7 @@
 	<br />
 	<a href="${pageContext.request.contextPath }/admin703/delete"> 测试删除
 	</a>
-	
+
 	<br />
 	<br />
 	<form action="${pageContext.request.contextPath}/type/converter"
@@ -30,5 +29,9 @@
 		<input type="submit" value="提交" />
 	</form>
 
+	<br />
+	<a href="${pageContext.request.contextPath }/user704/input"> 测试日期类型的格式化
+	</a>
+	
 </body>
 </html>

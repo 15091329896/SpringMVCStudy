@@ -15,8 +15,8 @@ public class ConverterController {
 	 * ("goods")接收请求参数，然后调用自定义类型转换器GoodsConverter将字符串值转换为GoodsModel的对象gm
 	 */
 	@RequestMapping("/converter")
-	public String myConverter(@RequestParam("goods") GoodsModel gm, Model model) {
-		model.addAttribute("goods", gm);
+	public String myConverter(@RequestParam("goods") GoodsModel goods, Model model) {
+		model.addAttribute("goods", goods);
 		return "showGoods";
 	}
 }

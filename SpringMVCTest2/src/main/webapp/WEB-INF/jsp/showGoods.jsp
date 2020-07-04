@@ -8,13 +8,13 @@
 </head>
 <body>
 	显示商品信息
-	<br/>
-	<br/>
-	    您创建的商品信息如下：
-    <!-- 使用EL表达式取出model中的goods信息 -->
-	    商品名称为:${goods.goodsname }
-	    商品价格为:${goods.goodsprice }
-	    商品名称为:${goods.goodsnumber }
+	<br />
+	<br /> 您创建的商品信息如下：
+	<!-- 使用EL表达式取出Action类的属性goods的值 -->
+	<br /> 商品名称为：${goods.goodsname }
+	<br /> 商品价格为：${goods.goodsprice }
+	<br /> 商品名称为：${goods.goodsnumber }
+	<br /> 商品日期为：${goods.goodsdate}
 </body>
 </html>
 
