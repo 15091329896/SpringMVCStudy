@@ -1,11 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+
+<c:set var="basePath" value="${pageContext.request.contextPath}" />
+
 <body>
 	没注册的用户，请
 	<a href="${pageContext.request.contextPath }/user703/register"> 注册</a>！
@@ -30,12 +34,19 @@
 	</form>
 
 	<br />
-	<a href="${pageContext.request.contextPath }/user704/input"> 测试日期类型的格式化
-	</a>
-	
-	测试表单标签库
+	<a href="${pageContext.request.contextPath }/user704/input">
+		测试日期类型的格式化 </a>
+
+
+	<br /> 测试表单标签库
 	<br />
-	<a href="${pageContext.request.contextPath }/index706/testLabel7061"> 测试表单标签库
-	</a>
+	<a href="${basePath}/index706/testLabel7061"> 测试表单标签库 </a>
+	<br />
+	<br />
+	<h2>测试表单标签库数据绑定</h2>
+	<br />
+	<a href="${basePath}/index7062/book_input"> 测试表单标签库数据绑定 </a>
+	<br />
+
 </body>
 </html>

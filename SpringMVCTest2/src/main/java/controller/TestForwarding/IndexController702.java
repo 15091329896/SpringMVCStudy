@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
  * 
-* @ClassName: IndexController706 
+* @ClassName: IndexController702 
 * @Description: 测试转发和重定向 
 * @author dyk 
 * @date Jul 3, 2020 1:52:12 PM 
