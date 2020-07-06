@@ -33,5 +33,9 @@
 	<a href="${pageContext.request.contextPath }/user704/input"> 测试日期类型的格式化
 	</a>
 	
+	测试表单标签库
+	<br />
+	<a href="${pageContext.request.contextPath }/index706/testLabel7061"> 测试表单标签库
+	</a>
 </body>
 </html>
