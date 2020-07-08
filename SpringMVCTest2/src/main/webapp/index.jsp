@@ -47,29 +47,71 @@
 	<br />
 	<a href="${basePath}/index7062/book_input"> 测试表单标签库数据绑定 </a>
 	<br />
-	
+
 	<br />
 	<h2>测试表JSON交互</h2>
 	<br />
 	<a href="${basePath}/index708/json"> 测试表JSON交互 </a>
 	<br />
-	
-	
+
+
 	<br />
 	<h2>测试拦截器验证用户登录</h2>
 	<br />
 	<a href="${basePath}/index7083/toLogin">登录 </a>
 	<br />
-	
+
 	<br />
 	<h2>测试验证器验证商品录入</h2>
 	<br />
 	<a href="${basePath}/index7084/input">验证商品录入</a>
 	<br />
-	
-	
-	
-		
-	
+
+
+	<br />
+	<br />
+	<h2>测试异常处理</h2>
+	<h3>
+		<a href="${basePath}/index7085/daodb"> 处理dao中数据库异常</a>
+	</h3>
+	<h3>
+		<a href="${basePath}/index7085/daomy"> 处理dao中自定义异常</a>
+	</h3>
+	<h3>
+		<a href="${basePath}/index7085/daono"> 处理dao未知错误 </a>
+	</h3>
+	<hr>
+	<h3>
+		<a href="${basePath}/index7085/servicedb">处理
+			service中数据库异常</a>
+	</h3>
+	<h3>
+		<a href="${basePath}/index7085/servicemy">处理
+			service中自定义异常</a>
+	</h3>
+	<h3>
+		<a href="${basePath}/index7085/serviceno">处理
+			service未知错误</a>
+	</h3>
+	<hr>
+	<h3>
+		<a href="${basePath}/index7085/db">处理
+			controller中数据库异常</a>
+	</h3>
+	<h3>
+		<a href="${basePath}/index7085/my">处理
+			controller中自定义异常</a>
+	</h3>
+	<h3>
+		<a href="${basePath}/index7085/no">处理 controller未知错误</a>
+	</h3>
+	<hr>
+	<!-- 在 web.xml中配置404 -->
+	<h3>
+		<a href="${basePath}/index7085/404">404 错误</a>
+	</h3>
+
+
+
 </body>
 </html>
