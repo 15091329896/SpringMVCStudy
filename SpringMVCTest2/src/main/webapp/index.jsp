@@ -47,6 +47,15 @@
 	<br />
 	<a href="${basePath}/index7062/book_input"> 测试表单标签库数据绑定 </a>
 	<br />
-
+	
+	<br />
+	<h2>测试表JSON交互</h2>
+	<br />
+	<a href="${basePath}/index708/json"> 测试表JSON交互 </a>
+	<br />
+	
+	
+	
+	
 </body>
 </html>
