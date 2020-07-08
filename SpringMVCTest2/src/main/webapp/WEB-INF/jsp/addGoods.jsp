@@ -9,7 +9,7 @@
 </head>
 <body>
 	<form:form modelAttribute="goods"
-		action="${pageContext.request. contextPath }/goods/save" method="post">
+		action="${pageContext.request. contextPath }/index7084/save" method="post">
 		<fieldset>
 			<legend> 添加一件商品 </legend>
 			<P>

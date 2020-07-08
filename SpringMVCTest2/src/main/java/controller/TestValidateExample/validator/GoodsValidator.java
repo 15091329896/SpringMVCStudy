@@ -21,7 +21,7 @@ public class GoodsValidator implements Validator {
 	public void validate(Object object, Errors errors) {
 		Goods goods = (Goods) object; // object要验证的对象
 		// goods.gname.required是错误消息属性文件中的编码(国际化后对应的是国际化的信息)
-		ValidationUtils.rejectIfEmpty(errors, "gname", "goods. gname.required");
+		ValidationUtils.rejectIfEmpty(errors, "gname", "goods.gname.required");
 		ValidationUtils.rejectIfEmpty(errors, "gdescription", "goods.gdescription.required");
 		if (goods.getGprice() > 100 || goods.getGprice() < 0) {
 			errors.rejectValue("gprice", "gprice.invalid");

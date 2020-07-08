@@ -64,7 +64,7 @@
 	<br />
 	<h2>测试验证器验证商品录入</h2>
 	<br />
-	<a href="${basePath}/index7084/toLogin">验证商品录入</a>
+	<a href="${basePath}/index7084/input">验证商品录入</a>
 	<br />
 	
 	

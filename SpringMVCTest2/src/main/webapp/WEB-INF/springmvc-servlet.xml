@@ -60,14 +60,10 @@
 		<property name="formatters"> <list> <bean class="controller.TestFormatter.DateConverter" 
 		c:_0="yyyy-MM-dd" /> </list> </property> </bean> -->
 
-	<!-- <bean id="conversionService"
-		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
-		<property name="formatters">
-			<set>
-				<bean class="controller.TestFormatter.DateConverter"></bean>
-			</set>
-		</property>
-	</bean> -->
+	<!-- <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"> 
+		<property name="formatters"> <set> <bean class="controller.TestFormatter.DateConverter"></bean> 
+		</set> </property> </bean> -->
+	<!-- <mvc:annotation-driven conversion-service="conversionService" /> -->
 
 
 
@@ -130,26 +126,26 @@
 
 	<!-- 配置登录验证的拦截器 -->
 	<!-- 配置拦截器 -->
-	<!-- <mvc:interceptors>
-		<mvc:interceptor>
-			配置拦截器作用的路径
-			<mvc:mapping path="/**" />
-			<bean class="controller.TestValidate.LoginInterceptor" />
-		</mvc:interceptor>
-	</mvc:interceptors> -->
+	<!-- <mvc:interceptors> <mvc:interceptor> 配置拦截器作用的路径 <mvc:mapping path="/**" 
+		/> <bean class="controller.TestValidate.LoginInterceptor" /> </mvc:interceptor> 
+		</mvc:interceptors> -->
 
-	<!-- 注册格式化转换器，因为用到日期转换 -->
-    <bean id="conversionService"
-        class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
-    </bean>
+
+	<bean id="conversionService"
+		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+	</bean>
 
 	<!-- 配置消息属性文件 -->
 	<bean id="messageSource"
 		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
 		<property name="basename"
 			value="/WEB-INF/resource/errorMessages" />
+		<property name="defaultEncoding" value="utf-8"></property> <!-- 解决 CustomValidationMessages.properties错误信息文件的中文乱码问题 -->
+		<!-- 资源文件编码格式 -->
+		<property name="fileEncodings" value="utf-8" />
+		<!-- 对资源文件内容缓存时间，单位秒 -->
+		<property name="cacheSeconds" value="120" />
 	</bean>
-
 
 
 </beans>

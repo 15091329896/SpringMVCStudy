@@ -1,6 +1,6 @@
 package controller.TestValidateExample.bean;
 
-import java.sql.Date;
+import java.util.Date;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
