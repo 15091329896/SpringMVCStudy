@@ -107,6 +107,32 @@
 			</list>
 		</property>
 	</bean>
+
 	<!--end:使用Jackson 2.x的配置，需要导入的jar包：jackson-core-xxx.jar、jackson-annotations-xxx.jar、jackson-databind-xxx.jar -->
+
+
+
+	<!-- 配置自定义的拦截器 -->
+	<!-- 配置拦截器 -->
+	<mvc:interceptors>
+		<!-- 配置一个全局拦截器，拦截所有请求 -->
+		<bean class="controller.TestInterceptor.TestInterceptor" />
+		<mvc:interceptor>
+			<!-- 配置拦截器作用的路径 -->
+			<mvc:mapping path="/**" />
+			<!-- 配置不需要拦截作用的路径 -->
+			<mvc:exclude-mapping path="" />
+			<!-- 定义<mvc:interceptor>元素中，表示匹配指定路径的请求才进行拦截 -->
+			<bean class="controller.TestInterceptor.TestInterceptor" />
+		</mvc:interceptor>
+		
+		<mvc:interceptor>
+			<!-- 配置拦截器作用的路径 -->
+			<mvc:mapping path="/gotoTest" />
+			<!-- 定义在<mvc: interceptor>元素中，表示匹配指定路径的请求才进行拦截 -->
+			<bean class="controller.TestInterceptor.TestInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
+
 
 </beans>

@@ -1,4 +1,4 @@
-package controller.TestJSON;
+package controller.TestInterceptor;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -20,10 +20,10 @@ import controller.TestJSON.bean.Person;
  * @date 2020-07-07 16:56:47
  */
 @Controller
-@RequestMapping("/index708")
-public class IndexController708 {
+@RequestMapping("/index7082")
+public class IndexController7082 {
 
-	private static final Log logger = LogFactory.getLog(IndexController708.class);
+	private static final Log logger = LogFactory.getLog(IndexController7082.class);
 
 	private ItemsCustom itemsCustom;
 
@@ -34,7 +34,6 @@ public class IndexController708 {
 
 	@RequestMapping("/json")
 	public String testLabel(Model model) {
-		System.out.println("到达controller");
 		return "TestJson2"; // 转发到 testJson2.jsp
 	}
 
