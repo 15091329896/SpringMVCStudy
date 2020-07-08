@@ -55,7 +55,15 @@
 	<br />
 	
 	
+	<br />
+	<h2>测试拦截器验证用户登录</h2>
+	<br />
+	<a href="${basePath}/index7083/toLogin">登录 </a>
+	<br />
 	
+	
+	
+		
 	
 </body>
 </html>

@@ -4,37 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>登录页面</title>
 </head>
 <body>
-	登录页面
-	<br/>
-	<br/>
-	<form action="${pageContext.request.contextPath }/user703/login"
+	${msg }
+	<form action="${pageContext.request.contextPath }/index7083/login"
 		method="post">
-		<table>
-			<tr>
-				<td colspan="2"><img
-					src="${pageContext.request.contextPath }/images/login.gif"></td>
-			</tr>
-			<tr>
-				<td>姓名：</td>
-				<td><input type="text" name="uname" class="textSize"></td>
-			</tr>
-			<tr>
-				<td>密码：</td>
-				<td><input type="password" name="upass" class="textsize">
-				</td>
-			</tr>
-			<tr>
-				<td colspan="2"><input type="image"
-					src="${pageContext.request.contextPath }/images/ok.gif"
-					onclick="gogo()"> <input type="image"
-					src="${pageContext.request.contextPath }/images/cancel.gif"
-					onclick="cancel()"></td>
-			</tr>
-		</table>
-		${messageError }
+		用户名：<input type="text" name="uname" /><br> 密码：<input
+			type="password" name="upwd" /><br> <input type="submit"
+			value="登录" />
 	</form>
 </body>
 </html>

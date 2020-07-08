@@ -4,24 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>首页</title>
+<title>主页</title>
 </head>
 <body>
-	<br/>
-	<br/>
-	这是首页
-	<br/>
-	<br/>
-	<a href="${pageContext.request.contextPath }/admin703/add"> 测试新增  </a>
-	<br/>
-	<a href="${pageContext.request.contextPath }/admin703/delete"> 测试删除 </a>
-	<br/>
+	当前用户：${user.uname}
+	<br />
+	<a href="${pageContext.request.contextPath }/index7083/logout">退出</a>
 </body>
 </html>
-
-
-
-
-
-
-
