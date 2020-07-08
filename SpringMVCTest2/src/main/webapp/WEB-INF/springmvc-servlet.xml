@@ -60,16 +60,14 @@
 		<property name="formatters"> <list> <bean class="controller.TestFormatter.DateConverter" 
 		c:_0="yyyy-MM-dd" /> </list> </property> </bean> -->
 
-	<bean id="conversionService"
+	<!-- <bean id="conversionService"
 		class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<property name="formatters">
 			<set>
 				<bean class="controller.TestFormatter.DateConverter"></bean>
 			</set>
 		</property>
-	</bean>
-	<mvc:annotation-driven
-		conversion-service="conversionService" />
+	</bean> -->
 
 
 
@@ -132,16 +130,26 @@
 
 	<!-- 配置登录验证的拦截器 -->
 	<!-- 配置拦截器 -->
-	<mvc:interceptors>
+	<!-- <mvc:interceptors>
 		<mvc:interceptor>
-			<!-- 配置拦截器作用的路径 -->
+			配置拦截器作用的路径
 			<mvc:mapping path="/**" />
 			<bean class="controller.TestValidate.LoginInterceptor" />
 		</mvc:interceptor>
-	</mvc:interceptors>
-	
-	
-	
-	
-	
+	</mvc:interceptors> -->
+
+	<!-- 注册格式化转换器，因为用到日期转换 -->
+    <bean id="conversionService"
+        class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+    </bean>
+
+	<!-- 配置消息属性文件 -->
+	<bean id="messageSource"
+		class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+		<property name="basename"
+			value="/WEB-INF/resource/errorMessages" />
+	</bean>
+
+
+
 </beans>
