@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>自定义异常错误</title>
 </head>
 <body>
     <H1>自定义异常错误：</H1><%=exception %>
