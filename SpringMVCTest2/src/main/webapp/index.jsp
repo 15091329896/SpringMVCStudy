@@ -82,25 +82,20 @@
 	</h3>
 	<hr>
 	<h3>
-		<a href="${basePath}/index7091/servicedb">处理
-			service中数据库异常</a>
+		<a href="${basePath}/index7091/servicedb">处理 service中数据库异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7091/servicemy">处理
-			service中自定义异常</a>
+		<a href="${basePath}/index7091/servicemy">处理 service中自定义异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7091/serviceno">处理
-			service未知错误</a>
+		<a href="${basePath}/index7091/serviceno">处理 service未知错误</a>
 	</h3>
 	<hr>
 	<h3>
-		<a href="${basePath}/index7091/db">处理
-			controller中数据库异常</a>
+		<a href="${basePath}/index7091/db">处理 controller中数据库异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7091/my">处理
-			controller中自定义异常</a>
+		<a href="${basePath}/index7091/my">处理 controller中自定义异常</a>
 	</h3>
 	<h3>
 		<a href="${basePath}/index7091/no">处理 controller未知错误</a>
@@ -111,6 +106,17 @@
 		<a href="${basePath}/index7091/404">404 错误</a>
 	</h3>
 
+
+	<br />
+	<h2>测试文件上传</h2>
+	<br />
+	<form action="${basePath}/index7092/onefile"
+		method="post" enctype="multipart/form-data">
+		选择文件：<input type="file" name="myfile"><br> 文件描述：<input
+			type="text" name="description"><br> <input type="submit"
+			value="提交">
+	</form>
+	<br />
 
 
 </body>

@@ -173,5 +173,13 @@
 	<!-- 第3种   @HandlerException（异常类与 View 的对应关系） 不需要任何配置信息 -->
 	
 	
+	<!-- 配置SpringMVC文件上传 -->
+	<!--配置MultipartResolver,用于文件上传-->
+    <bean id="multipartResolver"
+        class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!-- 单位是字节 / 1024 = KB ，下面限制100M大小的文件  100 * 1204 * 1024 = 104857600 -->
+        <property name="maxUploadSize" value="104857600" />
+        <property name="defaultEncoding" value="UTF-8" />
+    </bean>
 	
 </beans>
