@@ -18,7 +18,7 @@ import controller.TestHandlerException.service.TestExceptionService;
  * @date 2020-07-07 16:56:47
  */
 @Controller
-@RequestMapping("/index708")
+@RequestMapping("/index7085")
 public class IndexController7085 {
 
 	private static final Log logger = LogFactory.getLog(IndexController7085.class);
