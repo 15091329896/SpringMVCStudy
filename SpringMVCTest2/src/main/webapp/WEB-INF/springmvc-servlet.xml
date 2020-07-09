@@ -149,22 +149,25 @@
 
 
 	<!-- 统一异常处理 -->
-	<!-- 第一种   SimpleMappingExceptionResolver（异常类与 View 的对应关系） -->
-    <bean
-        class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
-        <!-- 定义默认的异常处理页面，当该异常类型注册时使用 -->
-        <property name="defaultErrorView" value="error"></property>
-        <!-- 定义异常处理页面用来获取异常信息的变量名，默认名为exception -->
-        <property name="exceptionAttribute" value="exception"></property>
-        <!-- 定义需要特殊处理的异常，用类名或完全路径名作为key，异常页名作为值 -->
-        <property name="exceptionMappings">
-            <props>
-                <prop key="controller.TestHandlerException.MyException">my-error</prop>
-                <prop key="java.sql.SQLException">sql-error</prop>
-                <!-- 在这里还可以继续扩展对不同异常类型的处理 -->
-            </props>
-        </property>
-    </bean>
+	<!-- 第一种 SimpleMappingExceptionResolver（异常类与 View 的对应关系） -->
+<!-- 	<bean
+		class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+		定义默认的异常处理页面，当该异常类型注册时使用
+		<property name="defaultErrorView" value="error"></property>
+		定义异常处理页面用来获取异常信息的变量名，默认名为exception
+		<property name="exceptionAttribute" value="exception"></property>
+		定义需要特殊处理的异常，用类名或完全路径名作为key，异常页名作为值
+		<property name="exceptionMappings">
+			<props>
+				<prop key="controller.TestHandlerException.MyException">my-error</prop>
+				<prop key="java.sql.SQLException">sql-error</prop>
+				在这里还可以继续扩展对不同异常类型的处理
+			</props>
+		</property>
+	</bean> -->
 
+	<!-- 第2种MyExceptionHandler  -->
+	<!--托管MyExceptionHandler -->
+	<bean class="exception.MyExceptionHandler" />
 
 </beans>
