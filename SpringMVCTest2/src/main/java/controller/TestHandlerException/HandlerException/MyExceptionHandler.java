@@ -17,14 +17,14 @@ public class MyExceptionHandler implements HandlerExceptionResolver {
 	public ModelAndView resolveException(HttpServletRequest arg0, HttpServletResponse arg1, Object arg2,
 			Exception arg3) {
 		Map<String, Object> model = new HashMap<String, Object>();
-		model.put("my-error", arg3);
+		model.put("exception", arg3);
 		// 根据不同错误转向不同页面（统一处理），即异常与View的对应关系
 		if (arg3 instanceof MyException) {
 			return new ModelAndView("my-error", model);
 		} else if (arg3 instanceof SQLException) {
-			return new ModelAndView("my-error", model);
+			return new ModelAndView("sql-error", model);
 		} else {
-			return new ModelAndView("my-error", model);
+			return new ModelAndView("error", model);
 		}
 	}
 }
