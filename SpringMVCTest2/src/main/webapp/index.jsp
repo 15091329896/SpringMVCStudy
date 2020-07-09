@@ -110,11 +110,24 @@
 	<br />
 	<h2>测试文件上传</h2>
 	<br />
-	<form action="${basePath}/index7092/onefile"
-		method="post" enctype="multipart/form-data">
+	<form action="${basePath}/index7092/onefile" method="post"
+		enctype="multipart/form-data">
 		选择文件：<input type="file" name="myfile"><br> 文件描述：<input
 			type="text" name="description"><br> <input type="submit"
 			value="提交">
+	</form>
+	<br />
+	<br />
+	<h2>测试多文件上传</h2>
+	<br />
+	<form action="${basePath}/index7092/multifile" method="post"
+		enctype="multipart/form-data">
+		选择文件1：<input type="file" name="myfile"><br> 文件描述1：<input
+			type="text" name="description"><br /> 选择文件2：<input
+			type="file" name="myfile"><br> 文件描述2：<input type="text"
+			name="description"><br /> 选择文件3：<input type="file"
+			name="myfile"><br> 文件描述3：<input type="text"
+			name="description"><br /> <input type="submit" value="提交">
 	</form>
 	<br />
 
