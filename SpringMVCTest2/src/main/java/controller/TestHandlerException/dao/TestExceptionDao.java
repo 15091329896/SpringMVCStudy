@@ -4,6 +4,8 @@ import java.sql.SQLException;
 
 import org.springframework.stereotype.Repository;
 
+import controller.TestHandlerException.MyException;
+
 @Repository("TestExceptionDao")
 public class TestExceptionDao {
 	public void daodb() throws Exception {
@@ -11,10 +13,10 @@ public class TestExceptionDao {
 	}
 
 	public void daomy() throws Exception {
-		throw new SQLException("Dao中自定义异常");
+		throw new MyException("Dao中自定义异常");
 	}
 
 	public void daono() throws Exception {
-		throw new SQLException("Dao中未知异常");
+		throw new Exception("Dao中未知异常");
 	}
 }

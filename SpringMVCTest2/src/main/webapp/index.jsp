@@ -72,43 +72,43 @@
 	<br />
 	<h2>测试异常处理</h2>
 	<h3>
-		<a href="${basePath}/index7085/daodb"> 处理dao中数据库异常</a>
+		<a href="${basePath}/index7091/daodb"> 处理dao中数据库异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7085/daomy"> 处理dao中自定义异常</a>
+		<a href="${basePath}/index7091/daomy"> 处理dao中自定义异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7085/daono"> 处理dao未知错误 </a>
+		<a href="${basePath}/index7091/daono"> 处理dao未知错误 </a>
 	</h3>
 	<hr>
 	<h3>
-		<a href="${basePath}/index7085/servicedb">处理
+		<a href="${basePath}/index7091/servicedb">处理
 			service中数据库异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7085/servicemy">处理
+		<a href="${basePath}/index7091/servicemy">处理
 			service中自定义异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7085/serviceno">处理
+		<a href="${basePath}/index7091/serviceno">处理
 			service未知错误</a>
 	</h3>
 	<hr>
 	<h3>
-		<a href="${basePath}/index7085/db">处理
+		<a href="${basePath}/index7091/db">处理
 			controller中数据库异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7085/my">处理
+		<a href="${basePath}/index7091/my">处理
 			controller中自定义异常</a>
 	</h3>
 	<h3>
-		<a href="${basePath}/index7085/no">处理 controller未知错误</a>
+		<a href="${basePath}/index7091/no">处理 controller未知错误</a>
 	</h3>
 	<hr>
 	<!-- 在 web.xml中配置404 -->
 	<h3>
-		<a href="${basePath}/index7085/404">404 错误</a>
+		<a href="${basePath}/index7091/404">404 错误</a>
 	</h3>
 
 

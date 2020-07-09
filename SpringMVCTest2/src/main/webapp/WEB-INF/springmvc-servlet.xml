@@ -168,7 +168,10 @@
 
 	<!-- 第2种   HandlerExceptionResolver（异常类与 View 的对应关系） -->
 	<!--托管MyExceptionHandler-->
-	<bean id="handlerExceptionResolver" class="controller.TestHandlerException.HandlerException.MyExceptionHandler"/>
+	<!-- <bean id="handlerExceptionResolver" class="controller.TestHandlerException.HandlerException.MyExceptionHandler"/> -->
+	
+	<!-- 第3种   @HandlerException（异常类与 View 的对应关系） 不需要任何配置信息 -->
+	
 	
 	
 </beans>
