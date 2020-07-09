@@ -130,6 +130,14 @@
 			name="description"><br /> <input type="submit" value="提交">
 	</form>
 	<br />
+	
+	
+	<br />
+	<h2>测试文件下载</h2>
+	<br />
+		<a href="${basePath}/index7093/showDownFiles">进入文件下载页面</a>
+	<br />
+	
 
 
 </body>

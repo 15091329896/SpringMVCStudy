@@ -17,8 +17,9 @@ import controller.TestFileupload.bean.MultiFileDomain;
 
 /**
  * 
- * @ClassName: IndexController7092
+ * @ClassName: IndexController7093
  * @Description: Spring MVC文件上传
+ * 					注意form表单中的name属性必须和实体类的中的参数名称对应
  * @author dyk
  * @date 2020-07-09 10:59:00
  *
@@ -59,6 +60,7 @@ public class IndexController7092 {
 
 	/**
 	 * 多文件上传
+	 * 
 	 */
 	@RequestMapping("/multifile")
 	public String multiFileUpload(@ModelAttribute MultiFileDomain multiFileDomain,HttpServletRequest request) {
